@@ -1,0 +1,42 @@
+{
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:angular/johnpapa"
+    ],
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "project": "tsconfig.json"
+    },
+    "plugins": ["@typescript-eslint"],
+    "rules": {
+      "@typescript-eslint/no-empty-function": 1,
+      "@typescript-eslint/no-explicit-any": 1,
+      "@typescript-eslint/prefer-function-type": 1,
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/camelcase" : 1,
+      "semi": ["warn", "always"],
+      "eol-last": ["error", "always"]
+    },
+    "settings": {
+      "jsdoc": {
+        "tagNamePreference": {
+          "param": "arg",
+          "returns": "return"
+        }
+      }
+    }
+  }
+  
